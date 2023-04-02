@@ -15,6 +15,8 @@ sd_compare.ipynb: compares the detected relationships between synthetic data gen
 
 sd_generator.py: contains synthetic data generator class and all necessary code; ready for importing
 
+dataset_generator.ipynb: generate sample datasets for model training
+
 ### /dist
 
 Production-ready compiled version of codes are stored here.
