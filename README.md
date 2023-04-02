@@ -9,6 +9,12 @@ to contribute on codes, data, weekly progress, etc.
 
 Codes in development/testing are stored here.
 
+dr_detector.ipynb: contains synthetic data generator and testing
+
+sd_compare.ipynb: compares the detected relationships between synthetic data generated with & without constraints
+
+sd_generator.py: contains synthetic data generator class and all necessary code; ready for importing
+
 ### /dist
 
 Production-ready compiled version of codes are stored here.
