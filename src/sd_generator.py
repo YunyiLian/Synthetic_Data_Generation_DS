@@ -368,12 +368,14 @@ class SD_generator():
                 diff = []
                 for index, row in self.data.iterrows():
                     diff.append(row[key] - row[value])
-
+                
+                positive_diff = [d for d in diff if d >= 0]
+                
                 if key in self.arithmetic_inequality_dict.keys():
-                    self.arithmetic_inequality_dict[key].append([value, min(diff)])
+                    self.arithmetic_inequality_dict[key].append([value, min(positive_diff)])
                 else:
                     self.arithmetic_inequality_dict[key] = []
-                    self.arithmetic_inequality_dict[key].append([value, min(diff)])
+                    self.arithmetic_inequality_dict[key].append([value, min(positive_diff)])
 
         et = time.time()
         self.arithmetic_inequality_runtime = et - st
